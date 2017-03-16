@@ -151,7 +151,7 @@ hr.right {
   margin: 15px 0 15px auto;
 }
 hr.colored {
-  border-color: white;
+  border-color: black;
 }
 @media (min-width: 768px) {
   hr {
@@ -1123,7 +1123,7 @@ footer.footer .copyright p.small {
   outline: none;
 }
     a.btn-outline-light:visited{
-      color:blue;
+      color:black;
     }
 .btn-outline-dark {
   color: #222;

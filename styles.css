@@ -151,7 +151,7 @@ hr.right {
   margin: 15px 0 15px auto;
 }
 hr.colored {
-  border-color: #EF4035;
+  border-color: white;
 }
 @media (min-width: 768px) {
   hr {
@@ -617,7 +617,7 @@ aside.cta-quote span.quote {
 }
 .services .pull-left{
   background-color:white;
-  color: dodgerblue;
+  color: black;
   border-radius: 100%;
   padding-right: 0;
 }
@@ -1122,6 +1122,9 @@ footer.footer .copyright p.small {
   background: white;
   outline: none;
 }
+    a.btn-outline-light:visited{
+      color:blue;
+    }
 .btn-outline-dark {
   color: #222;
   border: 1px solid #222;

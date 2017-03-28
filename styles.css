@@ -47,8 +47,8 @@ input.form-control:focus {
 }
 .btn-primary {
   color: white;
-  background-color: #EF4035;
-  border-color: #EF4035;
+  /*background-color: #EF4035;*/
+  /*border-color: #EF4035;*/
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
@@ -60,8 +60,8 @@ input.form-control:focus {
 .btn-primary.active,
 .open > .dropdown-toggle.btn-primary {
   color: white;
-  background-color: #ed2a1d;
-  border-color: #ec2114;
+  /*background-color: #ed2a1d;*/
+  /*border-color: #ec2114;*/
 }
 .btn-primary:active,
 .btn-primary.active,
@@ -151,7 +151,7 @@ hr.right {
   margin: 15px 0 15px auto;
 }
 hr.colored {
-  border-color: black;
+  border-color: lightseagreen;
 }
 @media (min-width: 768px) {
   hr {
@@ -177,7 +177,7 @@ hr.colored {
 .navbar-inverse .navbar-nav > .active > a,
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
-  color: #EF4035;
+  color: lightseagreen;
   background-color: white;
   border-radius: 0;
 }
@@ -189,7 +189,7 @@ hr.colored {
   border-color: rgba(255, 255, 255, 0.5);
 }
 .navbar-inverse {
-  background-color: #222;
+  background-color: white;
 }
 .navbar-default,
 .navbar-inverse {
@@ -198,7 +198,7 @@ hr.colored {
 }
 .navbar-default .navbar-toggle,
 .navbar-inverse .navbar-toggle {
-  color: white;
+  /*color: white;*/
   font-size: 14px;
   padding: 6px 10px;
 }
@@ -235,7 +235,7 @@ hr.colored {
 }
 .navbar-default .navbar-nav > li > a,
 .navbar-inverse .navbar-nav > li > a {
-  color: white;
+  color: black;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:hover {
@@ -277,11 +277,11 @@ hr.colored {
 header {
   position: relative;
   display: block;
-  height: auto;
+  /*height: auto;*/
   width: auto;
   background-color: #222;
   background: no-repeat center center;
-  background-attachment: scroll;
+  /*background-attachment: scroll;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -1219,4 +1219,76 @@ body.vintage .testimonials .owl-controls .owl-prev,
 body.vintage .about-carousel .owl-controls .owl-next,
 body.vintage .testimonials .owl-controls .owl-next {
   line-height: 55px !important;
+}
+
+
+
+
+
+
+#logo{
+  color:lightseagreen;
+  font-size:45px;
+}
+
+#header{
+  padding: 80px 0 0 0 ;
+}
+
+#ground{
+	-webkit-transform: skew(150deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+	background: lightseagreen;
+  background: linear-gradient(to top, darkblue, lightseagreen);
+  z-index:2;
+   position:relative;
+    left:-122px; 
+    width:817px;
+     height:375px;
+}
+
+
+#main_link{
+  top:130px; left:300px; position:absolute; z-index: 3;
+}
+
+#main_link span{
+  top:-50px; left:-240px; position:absolute; z-index: 3;font-size:55px;
+  text-align: center; color: white; white-space: nowrap;
+}
+
+#main_link a{
+  top:100px; left:-65px; position:absolute; z-index: 3; color: white;
+}
+
+#header .row.text-center span{
+  font-weight: bold;
+  font-size:21px;
+}
+
+@media (max-width: 770px){
+  #header img{
+    display: none;
+  }
+
+  #ground{
+    width: 1000px;
+    -webkit-transform: skew(0deg);
+	   -moz-transform: skew(0deg);
+	     -o-transform: skew(0deg);
+  }
+
+  #main_link{
+    
+  }
+    #main_link a{
+      left:-215px;
+      top:145px;
+    }
+    #main_link span{
+       white-space: pre-line;
+       left:-260px;
+       font-size:45px;
+    }
 }

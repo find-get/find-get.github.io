@@ -26,7 +26,7 @@ $(document).ready(function() {
 //scroll section
   var scrollObj = {}
   scrollObj.about = $('#about').offset();
-  scrollObj.process = $('#process').offset();
+  // scrollObj.process = $('#process').offset();
   // scrollObj.team = $('#team').offset();
   scrollObj.footer = $('#footer').offset();
 
@@ -35,30 +35,24 @@ $(document).ready(function() {
     var offset = startchange.offset();
      if (startchange.length){
       $(document).scroll(function() {
-        debugger;
+        // debugger;
          scroll_start = $(this).scrollTop();
-         if(scroll_start > offset.top / 4) {
-           $('nav').removeClass('navbar-expanded');
-          } else {
-             $("nav").addClass('navbar-expanded');
-          }
+        //  if(scroll_start > offset.top / 4) {
+          //  $('nav').removeClass('navbar-expanded');
+          // } else {
+          //    $("nav").addClass('navbar-expanded');
+          // }
           if(scroll_start >= scrollObj.about.top){
             $('nav li').removeClass('active');
             $('nav li:nth-child(2)').addClass('active');
           } else{
             $('nav li:nth-child(2)').removeClass('active');
           }
-           if(scroll_start >= scrollObj.process.top){
-            $('nav li').removeClass('active');
-            $('nav li:nth-child(3)').addClass('active');
-          } else{
-            $('nav li:nth-child(3)').removeClass('active');
-          }
-          //  if(scroll_start >= scrollObj.team.top){
+          //  if(scroll_start >= scrollObj.process.top){
           //   $('nav li').removeClass('active');
-          //   $('nav li:nth-child(4)').addClass('active');
+          //   $('nav li:nth-child(3)').addClass('active');
           // } else{
-          //   $('nav li:nth-child(4)').removeClass('active');
+          //   $('nav li:nth-child(3)').removeClass('active');
           // }
            if(scroll_start >= scrollObj.footer.top){
             $('nav li').removeClass('active');
